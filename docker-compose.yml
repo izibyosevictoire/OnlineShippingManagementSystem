@@ -6,9 +6,9 @@ services:
     environment:
       POSTGRES_DB: shippingdb
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 12345          # ← THIS MUST BE "root"
+      POSTGRES_PASSWORD: 12345
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
